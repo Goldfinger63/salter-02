@@ -3,7 +3,7 @@ import * as React from "react"
 // styles
 const pageStyles = {
   color: "#232129",
-  padding: 98,
+  padding: 68,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
 }
 const headingStyles = {

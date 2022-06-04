@@ -1,0 +1,74 @@
+header {
+    height: 60vh;
+    border-bottom: 1px solid #000;
+    line-height: 1.4283;
+    position: relative;
+    background-image: url("../images/Copenhagen0112.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-content {
+    position: absolute;
+    top: 60%;
+    margin: 0;
+    width: 40%;
+    left: 5%;
+    border: 2px solid rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, .3);
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+}
+.site-title {
+   font-weight: 300;
+   font-family: 'Julius Sans One', cursive;
+   font-size: 2.75em;
+}
+.site-title a, .site-title a:hover, .site-title a:visited {
+    color: rgba(255, 255, 255, 1);
+}
+.site-description {
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header button {
+   padding-top: .25em;
+   padding-bottom: .25em;
+   padding-left: .35em;
+   padding-right: .35em;
+   margin-top: 1em;
+}
+.nav-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .8);
+}
+.nav-container ul {
+    margin: 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    color: rgba(255, 255, 255, 1);
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+}
+.nav-container li {
+    background: none;
+    letter-spacing: .075em;
+    text-decoration: none;
+    padding: 5px 14px 5px 14px;
+}
+.nav-container a, .nav-container a:visited {
+    color: rgba(255, 255, 255, 1);
+}

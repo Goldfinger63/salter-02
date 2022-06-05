@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Layout from "../components/layout"
-
+import { sectionTitle } from "../components/blogpost.module.css"
 
 // Step 2: Define your component
 const BlogPage = () => {
@@ -32,7 +32,7 @@ const BlogPage = () => {
     <Layout>
       <main>
         <title>My Courses</title>
-        <h1>These are the courses I am teaching or developing.</h1>
+        <h1 className={sectionTitle}>Some courses I am teaching or developing.</h1>
           <ul>
             {data.allMarkdownRemark.edges.map(edge =>{
               return (

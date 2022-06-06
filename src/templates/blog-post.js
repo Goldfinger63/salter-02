@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-
+import { blogMeta, blogTitle } from "../components/blogpost.module.css"
 
 export const query = graphql`
     query($slug: String!) {
@@ -20,7 +20,7 @@ const BlogPost = props => {
     return (
       <Layout>
         <div>
-          <h1>{props.data.markdownRemark.frontmatter.title}</h1>
+          <h1 className={blogTitle}>{props.data.markdownRemark.frontmatter.title}</h1>
           <span>
             Posted on {props.data.markdownRemark.frontmatter.date}{" "}
             <span> / </span> {props.data.markdownRemark.timeToRead} min read

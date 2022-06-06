@@ -2,7 +2,7 @@
 import * as React from "react"
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import Layout from "../components/layout"
-import { sectionTitle } from "../components/blogpost.module.css"
+import { sectionTitle, blogTitle } from "../components/blogpost.module.css"
 
 // Step 2: Define your component
 const BlogPage = () => {
@@ -37,7 +37,7 @@ const BlogPage = () => {
             {data.allMarkdownRemark.edges.map(edge =>{
               return (
                 <li key={edge.node.id}>
-                  <h2>
+                  <h2 className={blogTitle}>
                     <Link to={`/blog/${edge.node.fields.slug}/`}>
                       {edge.node.frontmatter.title}
                     </Link>

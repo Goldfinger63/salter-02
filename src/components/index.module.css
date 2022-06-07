@@ -1,0 +1,19 @@
+.quoteBlock {
+    max-width: 600px;
+    box-shadow: 5px 10px rgba(0, 0,0, .10);
+    padding: 1em;
+    text-align: center;
+    margin: 0 auto 2em auto;
+    border-radius: 6px;
+}
+.quoteFont {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2em;
+}
+.quoteAuthor {
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1em; 
+    font-style: italic;
+    margin-left: 14em;
+    margin-top: .75em;
+}

@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import Layout from "../components/layout"
 import { quoteFont, quoteBlock, quoteAuthor } from "../components/index.module.css"
 import { blogTitle } from "../components/blogpost.module.css"
+import Card from "../components/card"
+
 
 //Step 2: Define your component
 const IndexPage = () => {
@@ -18,9 +20,16 @@ const IndexPage = () => {
       <h1 className={blogTitle}>Welcome, how can I help you today?</h1>
       
       
-      <div className="Card">
+      <div className="Cards">
+        <h2>Services we can offer you.</h2>
+        <Card 
+          title="Secure Web Design & Development"
+          text="Web Sites Designed with React and Gatsby.js."
+          image={require('../images/copenhagen-locks.jpg')} />
+          
         </div>
       <Link to="/about">About Me</Link>
+      
     </main>
     </Layout>
   )

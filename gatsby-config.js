@@ -7,7 +7,9 @@ module.exports = {
     author: "Jeff Salter"
   },
   plugins: [
-    
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     "gatsby-transformer-remark",
     {
       resolve: `gatsby-source-filesystem`,

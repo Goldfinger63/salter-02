@@ -18,16 +18,15 @@ const IndexPage = () => {
        <p className={quoteAuthor}>--Ansel Adams--</p>
       </div>
       <h1 className={blogTitle}>Welcome, how can I help you today?</h1>
-      
-      
-      <div className="Cards">
-        <h2>Services we can offer you.</h2>
+      <div className="cards">
         <Card 
-          title="Secure Web Design & Development"
-          text="Web Sites Designed with React and Gatsby.js."
-          image={require('../images/copenhagen-locks.jpg')} />
-          
-        </div>
+          title="Web Site Designs"
+          text="Secure websites designed with Gatsby.js and React."
+          image={require('../images/copenhagen-locks.jpg').default}
+        />
+      </div>
+      
+      
       <Link to="/about">About Me</Link>
       
     </main>

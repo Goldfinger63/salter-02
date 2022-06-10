@@ -1,11 +1,13 @@
 .card {
-    width: 300px;
-    height: 169px;
+    width: 250px;
+    height: 141px;
     position: relative;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, .25);
     transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
 .card:hover {
     transform: scale(1.1, 1.1);
@@ -23,12 +25,13 @@
 }
 .card h3 {
     color: rgba(255, 255, 255, 1);
-    font-size: 1.6em;
+    font-size: 1.4em;
     width: 190px;
     margin: 20px 0 0 20px;
 }
 .card p {
     color: rgba(255, 255, 255, 1);
-    margin: 20px 0 0 20px;
-    font-size: 1.2em;
+    margin: 20px 0 10px 20px;
+    font-size: .8em;
+    align-self: end;
 }

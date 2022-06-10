@@ -7,6 +7,7 @@ import { blogTitle } from "../components/blogpost.module.css"
 import Card from "../components/card"
 
 
+
 //Step 2: Define your component
 const IndexPage = () => {
   return (
@@ -18,16 +19,32 @@ const IndexPage = () => {
        <p className={quoteAuthor}>--Ansel Adams--</p>
       </div>
       <h1 className={blogTitle}>Welcome, how can I help you today?</h1>
-      <div className="cards">
+      <div className="cardGroup">
+      <Link to="/about">
         <Card 
           title="Web Site Designs"
           text="Secure websites designed with Gatsby.js and React."
           image={require('../images/copenhagen-locks.jpg').default}
         />
+      </Link>
+      
+        <Card 
+          title="Cybersecurity"
+          text="Protect your websites and data."
+          image={require('../images/Dublin0165.jpg').default}
+          
+        />
+      
+        <Card 
+          title="Thoughts and Ideas"
+          text="We will review your current web presence and future ideas."
+          image={require('../images/Houth0053.jpg').default}
+          
+        />
       </div>
       
       
-      <Link to="/about">About Me</Link>
+      
       
     </main>
     </Layout>

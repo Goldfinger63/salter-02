@@ -17,3 +17,9 @@
     margin-left: 14em;
     margin-top: .75em;
 }
+.cardGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}

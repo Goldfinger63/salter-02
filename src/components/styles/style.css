@@ -20,3 +20,10 @@ a:hover {
 a:visited {
     color: rgba(125, 128, 112, 1);
 }
+.cardGroup {
+    margin: 50px 0px 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    justify-items: center ;
+}

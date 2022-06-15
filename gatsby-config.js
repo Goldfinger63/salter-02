@@ -7,10 +7,27 @@ module.exports = {
     author: "Jeff Salter"
   },
   plugins: [
-    `gatsby-plugin-image`,
+
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              linkImagesToOriginal: false,
+              withWebp: true,
+              quality: 80,
+              maxWidth: 760,
+            },
+          },
+         ],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

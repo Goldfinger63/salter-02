@@ -3,6 +3,8 @@ title: "ISCI 340 Information and Cyber Security"
 date: "2022-05-20"
 ---
 
+![ISCI 340](../images/Dublin0165.jpg#blogImage)
+
 ## Academic Bulletin Description.
 This course provides students with essential skills and training in information and cyber security leading to the option to complete the CSSA certification process through Check Point Software Technologies.
 
